@@ -1,0 +1,28 @@
+location1 = (18.5204, 73.8567)  
+location2 = (19.0760, 72.8777)  
+location3 = (28.6139, 77.2090)  
+
+print("Location 1:", location1)
+print("Location 2:", location2)
+print("Location 3:", location3)
+
+print("\nLatitude of Location 1:", location1[0])
+print("Longitude of Location 1:", location1[1])
+
+print("Longitude using negative index:", location1[-1])
+
+print("\nTuple Length:", len(location1))
+
+combined = location1 + location2
+print("Combined Tuple:", combined)
+
+print("Repeated Location:", location1 * 2)
+
+print("\nIs latitude 18.5204 present?",
+      18.5204 in location1)
+
+print("Are Location 1 and Location 2 equal?",
+      location1 == location2)
+
+print("First coordinate value:", location1[:1])
+print("Complete coordinate:", location1[:])
