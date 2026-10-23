@@ -1,0 +1,32 @@
+def start_quiz():
+    questions = [
+        ["Which language is used for AI?",
+         ["1. Python", "2. HTML", "3. CSS", "4. SQL"], "1"],
+
+        ["Which function displays output in Python?",
+         ["1. input()", "2. print()", "3. type()", "4. int()"], "2"],
+
+        ["Which keyword is used for a loop?",
+         ["1. if", "2. def", "3. for", "4. return"], "3"]
+    ]
+
+    score = 0
+
+    for q in questions:
+        print("\n" + q[0])
+        for option in q[1]:
+            print(option)
+
+        answer = input("Enter your answer (1-4): ")
+
+        if answer == q[2]:
+            print("Correct answer!")
+            score += 1
+        else:
+            print("Wrong answer!")
+
+    print("\nQuiz Completed!")
+    print("Your score:", score, "/", len(questions))
+
+
+start_quiz()
